@@ -10,12 +10,12 @@ class HomeController extends Controller
     //
     public function movies() {
         
-        // $movies = Movie::all();
+        $movies = Movie::all();
         
-        // $data = [
-        //     'movies' => $movies
-        // ];
-        dd('oa');
-        return view('welcome', );
+        $data = [
+            'movies' => $movies
+        ];
+        
+        return view('welcome',$data );
     }
 }
